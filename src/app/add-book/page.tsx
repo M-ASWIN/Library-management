@@ -81,6 +81,7 @@ export default function Home() {
           className="max-w-xl my-3 border-2 border-black"
           onChange={(e) => setTitle(e.target.value)}
           value={title}
+          maxLength={30}
         />
         <p>AUTHOR</p>
         <Input
@@ -88,6 +89,8 @@ export default function Home() {
           className="max-w-xl my-3 border-2 border-black"
           onChange={(e) => setauthor(e.target.value)}
           value={author}
+          maxLength={30}
+
         />
         <p>DATE OF PUBLISH</p>
           <Input
@@ -103,6 +106,8 @@ export default function Home() {
           className="max-w-xl my-3 border-2 border-black"
           onChange={(e) => setcategory(e.target.value)}
           value={category}
+          maxLength={30}
+
         />
         <p>COUNT</p>
         <Input
@@ -110,6 +115,8 @@ export default function Home() {
           className="max-w-xl my-3 border-2 border-black"
           onChange={(e) => setcount(Number(e.target.value))}
           value={count}
+          maxLength={4}
+
         />
 
         <div className="flex mt-5">
